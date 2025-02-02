@@ -22,6 +22,7 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.selection.SelectionContainer
 import androidx.compose.material3.Card
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.Text
@@ -38,6 +39,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.pointer.motionEventSpy
@@ -71,7 +73,7 @@ fun ChatScreen(modifier: Modifier = Modifier, viewModel: JurisViewModel) {
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = Modifier
             .fillMaxSize()
-            .background(Brush.verticalGradient(listOf(light_blue, dark_blue)))
+            .background(Color.White.copy(0.9f))
             .padding(16.dp)
     ) {
 
@@ -87,10 +89,13 @@ fun ChatScreen(modifier: Modifier = Modifier, viewModel: JurisViewModel) {
                 verticalArrangement = Arrangement.Center
             ) {
 
-                Text(text = "JurisAI", fontSize = 30.sp, fontWeight = FontWeight.Bold)
-                Text(text = "Your Legal Companion")
+                Text(text = "JurisAI", fontSize = 30.sp, fontWeight = FontWeight.Bold, color = Color.Black)
+                Text(text = "Your Legal Companion", color = Color.Black.copy(0.8f))
             }
         }
+        Spacer(modifier = Modifier.height(5.dp))
+
+        HorizontalDivider()
 
         ChatList(messageList = viewModel.messageList, modifier = Modifier.weight(1f))
 
@@ -107,12 +112,12 @@ fun ChatScreen(modifier: Modifier = Modifier, viewModel: JurisViewModel) {
                 onValueChange = { query = it },
                 modifier = Modifier
                     .clip(RoundedCornerShape(100))
-                    .border(2.dp, color = Color.White.copy(0.8f), shape = RoundedCornerShape(100))
+                    .border(2.dp, color = Color.Black.copy(0.8f), shape = RoundedCornerShape(100))
                     .fillMaxWidth(0.85f),
                 colors = TextFieldDefaults.colors(
-                    focusedContainerColor = Color.White.copy(0.3f),
+                    focusedContainerColor = Color.Black.copy(0.8f),
                     unfocusedContainerColor = Color.Gray.copy(0.5f),
-                    unfocusedPlaceholderColor = Color.White.copy(0.5f)
+                    unfocusedPlaceholderColor = Color.Black.copy(0.8f)
                 )
             )
 
@@ -135,7 +140,7 @@ fun ChatScreen(modifier: Modifier = Modifier, viewModel: JurisViewModel) {
                     modifier = Modifier.size(300.dp),
                     painter = painterResource(id = R.drawable.baseline_send_24),
                     contentDescription = null,
-                    tint = Color.White.copy(0.8f)
+                    tint = Color.Black.copy(0.8f)
                 )
             }
         }
@@ -188,7 +193,10 @@ fun MessageRow(messageModel: MessageModel) {
             Box(
                 contentAlignment = Alignment.Center,
                 modifier = Modifier
-                    .background(color = if(messageModel.role == "user") Color.White.copy(0.2f) else Color.White.copy(0.4f), RoundedCornerShape(20.dp))
+                    .shadow(elevation = 5.dp, shape = RoundedCornerShape(20.dp), ambientColor = Color.Gray.copy(0.2f), spotColor = Color.Transparent)
+                    .background(
+                        color = if (messageModel.role == "user") Color.Black.copy(0.65f)
+                        else Color.Black.copy(0.8f), RoundedCornerShape(20.dp))
                     .align(if (isModel) Alignment.BottomStart else Alignment.BottomEnd)
                     .padding(
                         5.dp
