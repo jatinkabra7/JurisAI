@@ -35,7 +35,7 @@ Developed during the **CHRONOS V1 hackathon** under **AISOC**, JurisAI is a coll
 
 ## 📹 Demo Video  
 A recorded demo of the app showcasing its features is available.  
-🎥 **[Watch Demo](#)** [<!-- Add video link here -->  ](https://drive.google.com/file/d/1qnoatCwnXbY7l93xNQc1O3mdXngol9p9/view?usp=drivesdk)
+🎥 **[Watch Demo](#)** [<!-- Add video link here -->  https://drive.google.com/file/d/1qnoatCwnXbY7l93xNQc1O3mdXngol9p9/view?usp=drivesdk]
 
 ## 🛠️ How to Contribute  
 We welcome contributions! Follow these steps:  
