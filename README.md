@@ -48,5 +48,5 @@ We welcome contributions! Follow these steps:
 4. **Create a Pull Request** 🚀
 
 
-##📜 License
+📜 License
 JurisAI is developed under CHRONOS V1 hackathon for educational and research purposes.
