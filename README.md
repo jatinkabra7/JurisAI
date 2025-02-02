@@ -44,3 +44,9 @@ We welcome contributions! Follow these steps:
 2. **Clone** the forked repo:  
    ```sh
    git clone https://github.com/your-username/JurisAI.git
+3. **Make your changes, commit, and push**
+4. **Create a Pull Request** 🚀
+
+
+##📜 License
+JurisAI is developed under CHRONOS V1 hackathon for educational and research purposes.
