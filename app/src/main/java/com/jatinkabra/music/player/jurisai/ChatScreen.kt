@@ -126,7 +126,7 @@ fun ChatScreen(modifier: Modifier = Modifier, viewModel: JurisViewModel) {
                     query = " "
 
                     scope.launch {
-                        delay(3000)
+                        delay(5000)
                         query = ""
                     }
                 }
