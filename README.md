@@ -46,6 +46,7 @@ Currently, it runs on a **local server or the same WiFi network** during develop
 
 🔗 **Live Website**: [JurisAI Web](https://juris-website-d33r.vercel.app/)  
 📂 **Website Repository**: [GitHub Repo](https://github.com/aryanb1906/juris-website)  
+- **Backend Repo**: [GitHub Repo](https://github.com/aryanb1906/Juris_back)  
 
 📹 **Website Demo Video**  
 🎥 [Watch Demo](https://drive.google.com/file/d/1E7cY4vLx29MNdZRCjmSNiGRWX_ErRLxU/view?usp=sharing)  
