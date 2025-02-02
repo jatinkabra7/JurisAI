@@ -46,7 +46,8 @@ class JurisViewModel : ViewModel() {
 
             val systemPrompt = "You are JurisAI, an AI specialized in legal assistance. " +
                     "Only provide legal-related responses. " +
-                    "If the query is unrelated to law, politely inform the user that you can only discuss legal matters." + "Give reply in points short and concise"
+                    "If the query is unrelated to law, politely inform the user that you can only discuss legal matters." +
+                    "Give reply in points short and concise" + "ignore spelling mistakes"
 
             messageList.add(MessageModel(message = "Typing...", role = "model"))
 
