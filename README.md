@@ -1,6 +1,5 @@
 # JurisAI  
 
-![JurisAI Banner](#) <!-- Add a banner image if available -->  
 
 ## 📌 Overview  
 **JurisAI** is an AI-powered legal assistant designed to provide intelligent and interactive chat-based responses using the **Gemini API**. Built with **Kotlin** and **Jetpack Compose**, the app offers a seamless and user-friendly experience for legal queries.  
